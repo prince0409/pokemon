@@ -47,7 +47,16 @@ When you are finished, please upload your completed work to your Github and invi
 Please take some time to answer the following questions. Your answers should go directly in this `readme`.
 
 - Given more time, what would you suggest for improving the performance of this app?
+1. Implement lazy loading or pagination for the Pokémon list to reduce initial load time.
+2. Consider caching responses to prevent re-fetching data that has already been loaded.
+3. Use React.memo or useCallback to prevent unnecessary re-renders.
+4. Add debounce for filter by pokemon name (see `src/debounce.js`)
 
 - Is there anything you would consider doing if we were to go live with this app?
+1. Set up error, loading handling for API requests to manage failed calls or timeouts. (see `src/useFetchData.js`)
+2. Make the application responsive to handle different screen sizes and devices.
+3. Include tests for both the UI components and the API calls.
 
 - What was the most challenging aspect of this work for you (if at all)?
+
+I'd say it was challenging to come up with answers for those questions. Putting it into action wasn't hard, but thinking about its performance, scalability, and security while getting this app ready to launch will definitely be a challenge, yet it'll also be rewarding.
